@@ -1,0 +1,18 @@
+
+<h1>Taba de multiplicar</h1>
+<form #multiplicarForm="ngForm">
+    <label for="numero1">Numero: </label>
+    <input
+    type="number"
+    name="numero1"
+    #numero1
+    />
+    <br/>
+    <button (click)="multiplicarNumeros()">Multiplcar</button>
+</form>
+<table>
+    <tr *ngFor="let num of numeros; let i = index">
+        <td>{{i + 1}} x {{numero}}</td>
+        <td>{{num}}</td>
+    </tr>
+</table>
